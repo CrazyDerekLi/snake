@@ -1,0 +1,56 @@
+body{padding: 0;margin:0;position: absolute;zoom:1;}
+.snake-box{width:962px;height:962px;position: relative;}
+.snake-context{position:relative;float:left;top:0;left:0;}
+.snake-buttons{width:960px;position:relative;float:left;left:0;top:0;}
+.snake-description{width:100%;font-size:40px;font-family: '微软雅黑';word-break: break-all}
+.isPC{width:1662px}
+.isPC .snake-context{clear:both;}
+.isPC .snake-buttons{width:600px;}
+#canvas{background:#f7f7f7;border:1px solid #000;}
+.snake-button-up,.snake-button-down,.snake-button-left,.snake-button-right,.snake-button-space,.snake-button-restart{
+    position:absolute;
+    width:200px;
+    height:150px;
+    background-size: 200px;
+    border:1px solid #333;
+    font-size:60px;
+    text-align: center;
+    line-height: 150px;
+    background:#a23421;
+    font-weight: bold;
+    font-family: '微软雅黑';
+}
+.snake-button-up:hover,.snake-button-down:hover,.snake-button-left:hover,.snake-button-right:hover,.snake-button-space:hover,.snake-button-restart:hover{
+    cursor:pointer;
+    background:#a234a1;
+}
+.snake-button-space{
+    left:20px;
+    top:0;
+}
+.snake-button-up{
+    left:380px;
+    top:0;
+}
+.snake-button-restart{
+    left:740px;
+    top:0;
+}
+.snake-button-down{
+    left:380px;
+    top:180px;
+}
+.snake-button-left{
+    left:20px;
+    top:180px;
+}
+.snake-button-right{
+    left:740px;
+    top:180px;
+}
+.isPC .snake-button-up,.isPC .snake-button-down{
+    left:250px;
+}
+.isPC .snake-button-right,.isPC .snake-button-restart{
+    left:480px;
+}

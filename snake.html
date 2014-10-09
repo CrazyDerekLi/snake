@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>贪吃蛇</title>
+    <link type="text/css" rel="stylesheet" href="css/snake.css"/>
+    <!--<script type="text/javascript" charset="utf-8" src="js/jquery-2.1.0.min.js"></script>-->
+    <script type="text/javascript" charset="utf-8" src="js/jquery.min.js"></script>
+
+    <!-- js读取excel -->
+    <script type="text/javascript" charset="utf-8" src="js/jquery.jgestures.min.js"></script>
+    <!-- 贪吃蛇js -->
+    <script type="text/javascript" charset="utf-8" src="js/snake.js"></script>
+    <script type="text/javascript">
+
+        $(function(){
+            var snake = new $.Snake({
+                boxId:"canvas",
+                initLength:10,
+                boxSize:20,
+                timeStamp:150,
+                buttons:{
+                    up:"up",
+                    down:"down",
+                    left:"left",
+                    right:"right"
+                }
+            });
+        });
+
+    </script>
+
+
+</head>
+<body style="width:960px;height:960px;">
+
+<div class="snake-box">
+    <div class="snake-description">
+        开始/暂停/继续：空格键<br/>
+        左：←/A
+        右：←/D
+        上：←/W
+        下：←/S
+    </div>
+    <canvas id="canvas" width="960" height="960" class="snake-context">
+        <p>Your browserdoes not support the canvas element!</p>
+        <a style="display: block;">11</a>
+    </canvas>
+    <div class="snake-buttons">
+        <div class="snake-button-space">暂停</div>
+        <div class="snake-button-up">↑</div>
+        <div class="snake-button-down">↓</div>
+        <div class="snake-button-left">←</div>
+        <div class="snake-button-right">→</div>
+        <div class="snake-button-restart">重玩</div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
